@@ -1,34 +1,41 @@
-======== AUTO WATER MOTAR CONTROL V-2 =======
+# ======= AUTO WATER MOTAR CONTROL V-2 =======
 
-Function Modes
+## Function Modes
 
-Auto Mode (No save voltage)
-Motar Run when water level low than 100%
-Motar Stop when water level is 100%
-Manual Mode
-Motar relay always open, you need to control by on/off swithches of Motar
-Not related with sensor
-This Mode is prefer for external usages that not related water level sensor
-Auto Save Mode (Save voltage)
-Motar Run when water level low and voltage is higher than save voltage
+### 1. Auto Mode (No save voltage)
+* **Motar Run:** When water level is lower than 100%.
+* **Motar Stop:** When water level reaches 100%.
 
-Motar Stop when water level is 100% or current voltage is lower than save voltage
+### 2. Manual Mode
+* **Operation:** Motar relay is always open; you must control it using the physical On/Off switches of the Motar.
+* **Sensor:** Not related to the water level sensor.
+* **Usage:** This mode is preferred for external usages that do not require water level monitoring.
 
-This Mode is perfer for Motar's saving by using low voltage protection
+### 3. Auto Save Mode (Save voltage)
+* **Motar Run:** When water level is low AND voltage is higher than the Save Voltage (SV).
+* **Motar Stop:** When water level is 100% OR current voltage is lower than the Save Voltage.
+* **Usage:** This mode is preferred for protecting the Motar using low voltage protection.
 
-Low Voltage Protection
+---
 
-When current ACV low than SV, Motar will Stop.
-If this situation happens more than 2 time quickly within 1 min, system will sure that is low voltage Problem.
-If low votage problem found, system will wait perfect safe voltage to restart the motar.
-Motar will restart when current ACV is equal or higher than safe voltage.
-Protections and Adjustments
+## Low Voltage Protection
+* When current ACV is lower than **SV**, the Motar will stop.
+* If this situation happens more than 2 times quickly within 1 minute, the system will identify a **Low Voltage Problem**.
+* If a low voltage problem is found, the system will wait for a perfect safe voltage before attempting to restart the motar.
+* The Motar will restart only when the current ACV is equal to or higher than the safe voltage.
 
-If no water flow after 1 min of motar start in auto save and no save modes, motar will stop immediately and lcd will show "No Water Flowing"
+---
 
-You can adjust the save voltage(SV) in auto save mode by pressing the adjust btn for 3s. Adjust the SV by Potentionmeter and then press the adjust button for 3s to release.
+## Protections and Adjustments
 
+> [!IMPORTANT]
+> **Dry Run Protection:** If no water flow is detected after 1 minute of the motar starting (in Auto Save or No Save modes), the motar will stop immediately and the LCD will display: `"No Water Flowing"`.
 
+### Adjusting the Save Voltage (SV)
+1. Ensure the system is in **Auto Save Mode**.
+2. Press and hold the **Adjust Button** for 3 seconds.
+3. Adjust the **SV** using the **Potentiometer**.
+4. Press and hold the **Adjust Button** for 3 seconds again to save and release.
 
 
 # ======= AUTO WATER MOTAR CONTROL V-2 =======
