@@ -21,6 +21,14 @@ Low Voltage Protection
 When current ACV low than SV, Motar will Stop.
 If this situation happens more than 2 time quickly within 1 min, system will sure that is low voltage Problem.
 If low votage problem found, system will wait perfect safe voltage to restart the motar.
+Motar will restart when current ACV is equal or higher than safe voltage.
+Protections and Adjustments
+
+If no water flow after 1 min of motar start in auto save and no save modes, motar will stop immediately and lcd will show "No Water Flowing"
+
+You can adjust the save voltage(SV) in auto save mode by pressing the adjust btn for 3s. Adjust the SV by Potentionmeter and then press the adjust button for 3s to release.
+
+
 
 
 # ======= AUTO WATER MOTAR CONTROL V-2 =======
@@ -60,9 +68,3 @@ If low votage problem found, system will wait perfect safe voltage to restart th
 1. **Adjust Button** ကို ၃ စက္ကန့်ကြာ ဖိထားပါ။
 2. **Potentiometer** ကို အသုံးပြု၍ လိုချင်သော ဗို့အားပမာဏကို ချိန်ညှိပါ။
 3. ပြန်လည်သိမ်းဆည်းရန် **Adjust Button** ကို ၃ စက္ကန့်ကြာ ထပ်မံဖိထားပေးပါ။
-Motar will restart when current ACV is equal or higher than safe voltage.
-Protections and Adjustments
-
-If no water flow after 1 min of motar start in auto save and no save modes, motar will stop immediately and lcd will show "No Water Flowing"
-
-You can adjust the save voltage(SV) in auto save mode by pressing the adjust btn for 3s. Adjust the SV by Potentionmeter and then press the adjust button for 3s to release.
